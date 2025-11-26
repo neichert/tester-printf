@@ -16,8 +16,8 @@ int	main(void)
 {
 	int test_ok = 0;
 
-	printf("------------ TEST ------------\n\n");
-	printf("printf() / ft_printf()\n");
+	printf("------------ TEST ------------\n\n\n");
+	printf("printf() / ft_printf()\n\n");
 	printf("Test de %%c:\n");
 	char	c = 'a';
 	if (printf("%c ", c) == ft_printf("%c ", c))
