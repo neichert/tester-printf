@@ -158,7 +158,7 @@ int	main(void)
 
 	
 	printf("Test de INT_MIN:\n");
-	if (printf("%i", -2147483648) == ft_printf("%i", -2147483648))
+	if (printf("%d", -2147483648) == ft_printf("%d", -2147483648))
 	{
 		printf("✅\n\n");
 	}
