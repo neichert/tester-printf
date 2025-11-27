@@ -192,7 +192,7 @@ int	main(void)
 	printf("\n----------------------------------------------------\n\n");
 
 	printf("\n\n----------------------------------------------------\n");
-	printf("Test de (void *)-1 (pointeur invalide):\n");
+	printf("Test de (void *)-1:\n");
 	if (printf("%p ", (void *)-1) == ft_printf("%p ", (void *)-1))
 	{
 		printf("✅");
