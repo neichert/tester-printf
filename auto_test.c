@@ -170,7 +170,7 @@ int	main(void)
 
 	
 	printf("Test de INT_MAX:\n");
-	if (printf(2147483647) == ft_printf(2147483647))
+	if (printf("%i", 2147483647) == ft_printf("%i", 2147483647))
 	{
 		printf("✅\n\n");
 	}
