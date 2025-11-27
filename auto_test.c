@@ -11,6 +11,7 @@
 /* ************************************************************************** */
 
 #include "ft_printf.h"
+#include <limits.h>
 
 int	main(void)
 {
@@ -123,6 +124,65 @@ int	main(void)
 
 	printf("Test de %%%%:\n");
 	if (printf("%% ") == ft_printf("%% "))
+	{
+		printf("✅\n\n");
+	}
+	else
+	{
+		printf("❌\n\n");
+		test_ok = 1;
+	}
+
+	printf("Test de NULL:\n");
+	if (printf(NULL) == ft_printf(NULL))
+	{
+		printf("✅\n\n");
+	}
+	else
+	{
+		printf("❌\n\n");
+		test_ok = 1;
+	}
+
+	
+	printf("Test de \"\":\n");
+	if (printf("") == ft_printf(""))
+	{
+		printf("✅\n\n");
+	}
+	else
+	{
+		printf("❌\n\n");
+		test_ok = 1;
+	}
+
+	
+	printf("Test de INT_MIN:\n");
+	if (printf(INT_MIN) == ft_printf(INT_MIN))
+	{
+		printf("✅\n\n");
+	}
+	else
+	{
+		printf("❌\n\n");
+		test_ok = 1;
+	}
+
+	
+	printf("Test de INT_MAX:\n");
+	if (printf(INT_MAX) == ft_printf(INT_MAX))
+	{
+		printf("✅\n\n");
+	}
+	else
+	{
+		printf("❌\n\n");
+		test_ok = 1;
+	}
+
+	
+	printf("Test de (void *)-1 (pointeur invalide):\n");
+	if (printf((void *)-1) == ft_printf((void *)-1))
 	{
 		printf("✅\n\n");
 	}
