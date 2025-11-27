@@ -158,7 +158,7 @@ int	main(void)
 
 	
 	printf("Test de INT_MIN:\n");
-	if (printf(INT_MIN) == ft_printf(INT_MIN))
+	if (printf("%i", -2147483648) == ft_printf("%i", -2147483648))
 	{
 		printf("✅\n\n");
 	}
@@ -170,7 +170,7 @@ int	main(void)
 
 	
 	printf("Test de INT_MAX:\n");
-	if (printf(INT_MAX) == ft_printf(INT_MAX))
+	if (printf(2147483647) == ft_printf(2147483647))
 	{
 		printf("✅\n\n");
 	}
@@ -182,7 +182,7 @@ int	main(void)
 
 	
 	printf("Test de (void *)-1 (pointeur invalide):\n");
-	if (printf((void *)-1) == ft_printf((void *)-1))
+	if (printf("%p", (void *)-1) == ft_printf("%p", (void *)-1))
 	{
 		printf("✅\n\n");
 	}
