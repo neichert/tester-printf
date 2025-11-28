@@ -1,0 +1,27 @@
+#!/bin/bash
+
+#!/bin/bash
+
+ARGS_LIST=("printf")
+
+if [ $# -eq 0 ]; then
+    echo "Arguments possibles :"
+    for arg in "${ARGS_LIST[@]}"; do
+        echo " - $arg"
+    done
+    exit 0
+fi
+
+
+if [ "$1" = "printf" ]; then
+	git clone https://github.com/neichert/tester-printf.git Tester >/dev/null 2>&1
+
+
+	cd Tester || exit
+
+	make
+
+	cd .. || exit
+
+	rm -rf Tester
+fi
