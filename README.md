@@ -2,6 +2,8 @@
 
 Ce tester compare **ton `ft_printf`** avec le **vrai `printf`** sur toutes les conversions demandées dans le sujet 42.
 
+⚠️ IMPORTANT ⚠️: Le fichier tester est a installer et a mettre dans votre Home/bin pour pouvoir executer la commande tester printf dans le terminal qui executera proprement et plus rapidement le tester !!!
+
 Chaque test affiche :
 
 - ✅ **OK** — Les deux fonctions renvoient la **même valeur**
